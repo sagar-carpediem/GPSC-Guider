@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notifications | GPSC Guider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>📘 GPSC Guider</h2>
+    <a href="#" class="logout-btn" onclick="confirmLogout()">Logout</a>
+  </div>
+
+  <div class="page-content">
+    <h1>🔔 Notifications</h1>
+    <p>Latest updates, deadlines, and announcements will be listed here.</p>
+<ul>
+  <li>🗓️ GPSC Prelims 2025 Exam Date: 15th August</li>
+  <li>📄 Admit Cards will be available from 1st August</li>
+  <li>📘 New Polity Materials Uploaded</li>
+  <li>📢 Final Deadline for Fee Payment: 10th July</li>
+</ul>
+
+<!-- To add more, just copy this format:
+<li>📌 Your notification text here</li>
+-->
+
+  </div>
+  <script>
+    function confirmLogout() {
+      if (confirm("Do you really want to logout?")) {
+        window.location.href = "logout.php";
+      }
+    }
+  </script>
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+ <footer>
+    <p>&copy; 2025 GPSC Guider. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

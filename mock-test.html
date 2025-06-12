@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mock Tests | GPSC Guider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>📘 GPSC Guider</h2>
+    <a href="#" class="logout-btn" onclick="confirmLogout()">Logout</a>
+  </div>
+
+  <div class="page-content">
+    <h1>📝 Mock Tests</h1>
+    <p>Attempt mock exams, weekly quizzes, and practice tests to improve your speed and accuracy.</p>
+  </div>
+  <script>
+    function confirmLogout() {
+      if (confirm("Do you really want to logout?")) {
+        window.location.href = "logout.php";
+      }
+    }
+  </script>
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+  <footer>
+    <p>&copy; 2025 GPSC Guider. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

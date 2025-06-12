@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Material | GPSC Guider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>📘 GPSC Guider</h2>
+    <a href="#" class="logout-btn" onclick="confirmLogout()">Logout</a>
+  </div>
+
+  <div class="page-content">
+    <h1>📚 Study Material</h1>
+    <p>Here you’ll find notes, syllabus-wise PDFs, and reference links for your GPSC preparation.</p>
+<p>Click on any link below to download or view:</p>
+<ul>
+  <li><a href="Materials/The_Preamble_Indian_Polity.pdf" target="_blank">Indian Polity Notes</a></li>
+  <li><a href="Materials/ગુજરાતની ભૂગોળ (Exam ki pathshala).pdf" target="_blank">Gujarat Geography</a></li>
+  <li><a href="Materials/વિજ્ઞાન.pdf" target="_blank">Basic Science PDF</a></li>
+   <li><a href="Materials/NCERT_પર્યાવરણ_Environment_Yuva_Upnishad_@devggn_1_1.pdf" target="_blank">NCERT-Environment</a></li>
+   <li><a href="Materials/NCERT_ભૌતિક_ભૂગોળ_Yuva_Upnishad_@devggn_1.pdf" target="_blank">Bharat ni Bhugol PDF</a></li>
+    <li><a href="Materials/ethics3.pdf" target="_blank">Ethics Case Study</a></li>
+   <li><a href="Materials/Reasoning book by Bharat Academy.pdf" target="_blank">Reasoning By Bharat Academy</a></li>
+</ul>
+
+
+
+  </div>
+  <script>
+    function confirmLogout() {
+      if (confirm("Do you really want to logout?")) {
+        window.location.href = "logout.php";
+      }
+    }
+  </script>
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+<footer>
+    <p>&copy; 2025 GPSC Guider. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>

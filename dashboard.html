@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | GPSC Guider</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h2>📘 GPSC Guider</h2>
+    <a href="#" class="logout-btn" onclick="confirmLogout()">Logout</a>
+  </div>
+
+  <div class="welcome-section">
+    <h1>Welcome Back, Student 👋</h1>
+    <p>Your GPSC preparation starts here!</p>
+  </div>
+<div class="cards-container">
+  <a href="study-material.html" class="card">
+    <h3>📚 Study Material</h3>
+    <p>Get curated notes and PDFs for each subject.</p>
+  </a>
+
+  <a href="mock-test.html" class="card">
+    <h3>📝 Mock Tests</h3>
+    <p>Practice with daily and weekly test series.</p>
+  </a>
+
+  <a href="progress-tracker.html" class="card">
+    <h3>📊 Progress Tracker</h3>
+    <p>Track your performance and stay motivated.</p>
+  </a>
+
+  <a href="notifications.html" class="card">
+    <h3>🔔 Notifications</h3>
+    <p>Stay updated with exam dates and alerts.</p>
+  </a>
+</div>
+  </div>
+  <script>
+    function confirmLogout() {
+      const confirmAction = confirm("Do you really want to logout?");
+      if (confirmAction) {
+        window.location.href = "logout.php";
+      }
+    }
+  </script>
+  <div id="footer"></div>
+ <footer>
+    <p>&copy; 2025 GPSC Guider. All rights reserved.</p>
+  </footer>
+</body>
+</html>
